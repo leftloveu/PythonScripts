@@ -16,7 +16,7 @@ class ZipFileUtil:
 		@sourceFilePath: 待压缩的文件路径
 		@zipFilePath: 压缩后存放路径
 		@fileName: 压缩后文件的名称
-		@return: flag: True or False
+		@return: flag
 		'''
 		flag = False
 
