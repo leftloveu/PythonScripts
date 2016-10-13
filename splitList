@@ -1,0 +1,25 @@
+#!/bin/python
+# -*- coding: utf-8 -*-
+
+# Author: EdwardZhou E-mail: zrfedward@gmail.com
+# Date: 2016-10
+import math
+
+class splitList:
+
+	@staticmethod
+	def cutList(listData=None, num=1):
+		'''
+		@function: 将list按需分割为多个list
+		@listData: list
+		@num: 需要分割个数
+		'''
+		if not listData:
+			print "there is no listData"
+		else:
+			n = int(math.ceil(len(listData) / float(num)))
+			print [listData[i:i + n] for i in range(0, len(listData), n)]
+
+if __name__ == '__main__':
+	splitList.cutList([1, 2, 3, 4, 5, 6, 7, 8], 3)
+	splitList.cutList([], 1)
