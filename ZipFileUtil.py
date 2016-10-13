@@ -2,7 +2,7 @@
 # -*- coding: utf-8 -*-
 
 # Function:
-# Author: ZhouRuoFan
+# Author: EdwardZhou E-mail: zrfedward@gmail.com
 # Date: 2016-06
 
 import os, zipfile
@@ -13,11 +13,10 @@ class ZipFileUtil:
 	def fileToZip(sourceFilePath, zipFilePath, fileName):
 		'''
 		@Fuction: 将存放在sourceFilePath目录下的源文件,打包成fileName名称的ZIP文件,并存放到zipFilePath
-		args:
-		sourceFilePath 待压缩的文件路径
-		zipFilePath	压缩后存放路径
-		fileName	   压缩后文件的名称
-		return: flag
+		@sourceFilePath: 待压缩的文件路径
+		@zipFilePath: 压缩后存放路径
+		@fileName: 压缩后文件的名称
+		@return: flag
 		'''
 		flag = False
 
